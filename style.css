@@ -1,0 +1,227 @@
+body {
+    background-color: black;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    min-width: 100vw;
+}
+.containernavbar {
+    background: linear-gradient(to bottom, rgb(59, 1, 1), black);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 40px 10px 40px;
+}
+.navbar h1 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.navbar span {
+    color: red;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 10px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
+
+.hiro {
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.hiro h2 {
+    color: aliceblue;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#terbaru {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 48px;
+}
+
+#terbaru h1 {
+    width: 120px;
+    color: aliceblue;
+    font-size: 25px;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 15px;
+}
+
+#terpopuler {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 48px;
+}
+
+#terpopuler h1 {
+    width: 150px;
+    color: aliceblue;
+    font-size: 25px;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 15px;
+}
+
+#terbaik {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 48px;
+}
+
+#terbaik h1 {
+    width: 120px;
+    color: aliceblue;
+    font-size: 25px;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 15px;
+}
+
+.daftarfilm {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.card {
+    width: 300px;
+    padding-bottom: 10px;
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    justify-content: space-between;
+}
+
+.konten {
+    display: flex;
+    flex-direction: column;
+}
+.konten img {
+    width: 300px;
+    height: 150px;
+}
+
+.konten .sinopsis {
+    padding: 10px 15px 10px;
+    max-height: 180px;
+    min-height: 180px;
+}
+
+.konten .sinopsis h3 {
+    color: aliceblue;
+}
+
+.konten .sinopsis p {
+    color: aliceblue;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: justify;
+}
+
+.konten button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all .3s;
+}
+.konten button a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s
+}
+
+.konten button:hover {
+    background-color: red;
+    color: aliceblue
+}
+
+.konten button:hover a {
+    color: aliceblue;
+}
+
+#back-to-top {
+    position: fixed;
+    display: none;
+    top: 30px;
+    right: 50%;
+    left: 50%;
+}
+
+#back-to-top a {
+    background-color: rgb(32, 3, 3);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+#back-to-top a:hover {
+    background-color: darkred;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 50%;
+    max-width: 80%;
+    min-height: 60%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
